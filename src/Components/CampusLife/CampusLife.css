@@ -1,0 +1,139 @@
+.img {
+  position: relative;
+  transition: var(--transition);
+  place-self: center;
+  width: 100%;
+  height: 100%;
+}
+.img:hover {
+  scale: 1.03;
+}
+.img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--8px);
+  opacity: 0;
+  transition: var(--transition);
+}
+.img .img-overlay:hover {
+  opacity: 1;
+}
+.img .img-overlay div {
+  width: max-content;
+  text-align: center;
+}
+.img .img-overlay h3 {
+  font-size: var(--h6);
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+.img .img-overlay p {
+  color: #fff;
+}
+.img:nth-child(1) .img-overlay {
+  background: var(--card1);
+}
+.img:nth-child(2) .img-overlay {
+  background: var(--card2);
+}
+.img:nth-child(3) .img-overlay {
+  background: var(--card3);
+}
+.img:nth-child(4) .img-overlay {
+  background: var(--card4);
+}
+.img:nth-child(5) .img-overlay {
+  background: var(--card5);
+}
+.img:nth-child(6) .img-overlay {
+  background: var(--card6);
+}
+
+.campus-life-container {
+  display: flex;
+  gap: var(--8px);
+}
+.container-left,
+.container-right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--8px);
+  height: 700px;
+}
+.container-left {
+  flex: 30%;
+}
+.container-right {
+  flex: 70%;
+}
+.col-small {
+  flex: 40%;
+  width: 100%;
+  height: 100%;
+}
+.col-big {
+  flex: 60%;
+  width: 100%;
+  height: 100%;
+}
+.right-1,
+.right-2 {
+  flex: 1;
+}
+.right-1 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: var(--8px);
+}
+.right-2 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: var(--8px);
+}
+
+@media screen and (max-width: 992px) {
+  .campus-life-container {
+    flex-direction: column;
+    height: 1200px;
+  }
+  .container-left {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 650px) {
+  .campus-life-container {
+    height: 1700px;
+  }
+  .container-left {
+    flex: 33.33%;
+    flex-direction: column;
+  }
+  .col-big,
+  .col-small {
+    flex: 50%;
+    margin: auto;
+    max-width: 400px;
+  }
+
+  .container-right {
+    flex: 66.67%;
+  }
+  .right-1 {
+    grid-template-columns: 1fr;
+  }
+  .right-2 {
+    grid-template-columns: 1fr;
+  }
+}

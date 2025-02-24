@@ -1,0 +1,61 @@
+.card-container {
+  max-width: 400px;
+  border-radius: var(--8px);
+  overflow: hidden;
+  border: 1px solid var(--black10);
+  margin: auto;
+  transition: var(--transition);
+}
+.card-container:hover {
+  border: 1px solid var(--primary-color);
+  scale: 1.05;
+}
+.card-container .img-box {
+  width: 100%;
+  height: 250px;
+}
+.card-container .img-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.card-container .card-content {
+  padding: var(--8px);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.card-container .card-content h3 {
+  color: var(--secondar-color);
+  font-size: clamp(var(--h6), 2.5vw, var(--h4));
+  font-weight: 300;
+}
+.card-container .card-content p.price {
+  color: var(--price-color);
+  font-weight: 300;
+}
+.card-container .card-content p.card-link {
+  color: var(--primary-color);
+  font-size: clamp(var(--p), 1.5vw, var(--h5));
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  transition: var(--transition);
+  margin-top: 4px;
+  cursor: pointer;
+}
+.card-container .card-content p.card-link:hover {
+  gap: var(--8px);
+}
+.date .calendar {
+  color: var(--price-color);
+  font-size: 1rem;
+}
+.date {
+  font-size: var(--small);
+  color: var(--black75);
+  display: flex;
+  align-items: center;
+  gap: var(--8px);
+}

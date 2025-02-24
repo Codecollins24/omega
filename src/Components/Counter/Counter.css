@@ -1,0 +1,57 @@
+.counters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: var(--24px) 4%;
+  grid-gap: var(--24px) 1rem;
+}
+.counter-container {
+  background: linear-gradient(var(--black75), var(--black75)),
+    url(/counter1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.counter {
+  text-align: center;
+  position: relative;
+}
+.counter:not(:last-child)::after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  width: 2px;
+  height: 3.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.counter h1 {
+  color: var(--primary-color);
+  font-size: clamp(var(--h5), 3vw, var(--h1));
+}
+.counter p {
+  color: var(--grey);
+  font-size: clamp(var(--p), 2vw, var(--h5));
+}
+@media screen and (max-width: 900px) and (min-width: 501px) {
+  .counters {
+    grid-template-columns: 1fr 1fr;
+  }
+  .counter:nth-child(2)::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .counters {
+    grid-template-columns: 1fr;
+    row-gap: 5em;
+  }
+  .counter:not(:last-child)::after {
+    width: 90%;
+    height: 2px;
+    top: initial;
+    right: initial;
+    bottom: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

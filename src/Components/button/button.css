@@ -1,0 +1,20 @@
+button {
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 1rem var(--32px);
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: var(--32px);
+  width: max-content;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #f00476;
+}
+@media screen and (max-width: 620px) {
+  button {
+    padding: var(--8px) 1rem;
+    border-radius: 1rem;
+  }
+}

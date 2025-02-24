@@ -1,0 +1,87 @@
+.courses {
+  background-color: var(--black10);
+}
+.courses-title {
+  background: linear-gradient(var(--black75), var(--black75)), url(/hero2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: var(--24px) 0;
+  text-align: center;
+}
+.courses-title h1 {
+  color: var(--grey);
+  font-size: clamp(var(--h5), 3.5vw, var(--bigheader));
+  font-weight: 500;
+}
+.courses-section {
+  padding: var(--24px) 4%;
+}
+.courses-container {
+  margin-top: var(--24px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--24px);
+}
+.courses-container .choose-level {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.courses-container .choose-level a {
+  font-size: clamp(var(--p), 2vw, var(--h5));
+  font-weight: 300;
+  color: var(--secondar-color);
+  position: relative;
+}
+.courses-container .choose-level a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  width: 1px;
+  height: 18px;
+  background-color: var(--black25);
+  transform: translateY(-50%);
+  transition: var(--transition);
+}
+.courses-container .choose-level a:hover {
+  color: var(--primary-color);
+}
+.program-type {
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.program-type .program {
+  color: var(--secondar-color);
+  font-size: clamp(var(--h6), 2.5vw, var(--h4));
+  margin-left: 24px;
+  position: relative;
+}
+.program-type .program::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  top: 25%;
+  left: -17px;
+  transform: translateX(-25%);
+}
+.program-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--24px);
+  margin-bottom: var(--24px);
+}
+
+@media screen and (max-width: 992px) {
+  .program-type .program::before {
+    width: 14px;
+    height: 14px;
+  }
+}

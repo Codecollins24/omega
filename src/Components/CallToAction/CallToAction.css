@@ -1,0 +1,19 @@
+.cta-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: linear-gradient(var(--black75), var(--black75)), url(/cta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: var(--24px) 4%;
+}
+.cta-container h3 {
+  font-size: clamp(var(--h5), 3vw, var(--h1));
+  font-weight: 600;
+  color: #fff;
+}
+.cta-container p {
+  font-size: clamp(var(--small), 2vw, var(--h5));
+  color: var(--grey);
+}

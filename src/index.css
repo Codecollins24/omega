@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
+  transition: all .3s;
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: #f1338f;
+  --secondar-color:rgb(2, 2, 79);
+  --tertiary-color:#ff5c7b;
+  --card1:rgba(241, 51, 143,0.8);
+  --card2:rgba(173, 7, 160, 0.8);
+  --card3:rgba(17, 235, 231, 0.7);
+  --card4:rgba(243, 231, 8, 0.8);
+  --card5:rgba(43, 250, 6, 0.7);
+  --card6:rgba(249, 5, 5, 0.7);
+  --price-color: #04b104;
+  --gradient-color: background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  --pureblack:#000000;
+  --black75:rgba(0,0,0,.75);
+  --black50:rgba(0,0,0,.5);
+  --black25:rgba(0,0,0,.25);
+  --black10:rgba(0,0,0,.1);
+  --grey:rgb(220, 219, 219);
+  --bigheader:3.5rem;
+  --h1:2.986rem;
+  --h2:2.488rem;
+  --h3:2.074rem;
+  --h4:1.728rem;
+  --h5:1.44rem;
+  --h6:1.2rem;
+  --p:1rem;
+  --small:0.833rem;
+  --vsmall:0.694rem;
+  --transition: all .5s;
+  /* 8pt system*/
+  --8px:0.5rem;
+  --24px:1.5rem;
+  --32px:2rem;
+  --40px:2.5rem;
+  --48px:3rem;
+  --56px:3.5rem;
+  --64px:4rem;
+  --72px:4.5rem;
+  --80px:5rem;
+  --88px:5.5rem;
+  --96px:6rem;
+  --104px:6.5rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+section {
+  padding: var(--24px) 4%;
+}
+.main-title {
+  color: var(--secondar-color);
+  font-size: clamp(var(--h5), 3.5vw, var(--bigheader));
+  font-weight: 500;
+}
+.mini-title {
+  color: var(--primary-color);
+  font-size: clamp(var(--p), 2vw, var(--h5));
+  font-weight: 300;
+}
+.desc {
+  font-size: var(--p);
+  color: var(--black75);
+}
+.title {
+  text-align: center;
+}
+section:nth-child(even) {
+  background-color: var(--black10);
+}
+/*card-groups*/
+.home-card-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: var(--32px);
+
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--24px);
+}
+
+@media screen and (max-width: 992px) {
+  .home-card-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px){
+  .home-card-group {
+    grid-template-columns: 1fr;
+  }
+}
