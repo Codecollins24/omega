@@ -24,7 +24,7 @@ const Course = () => {
           cardLink={handleApply}
         />
         <Card
-          imgSrc="/medicine.png"
+          imgSrc="/medicine-1.jpg"
           title="Medicine & Surgery"
           price="$3500"
           text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam qui impedit animi temporibus mollitia esse error adipisci, distinctio accusantium"

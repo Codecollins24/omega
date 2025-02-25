@@ -21,16 +21,27 @@ const ApplyNow = () => {
         </p>
       </div>
       <div className="applynow-container">
-        <div className="applynow-img">
-          <img src="/friend-2727307_640.jpg" alt="Apply now" />
+        <div className="applynow-links">
+          <h3>Apply Online</h3>
+          <div>
+            <a href="#uploadPhoto">Upload a Photo</a>
+            <a href="#basicInformation">Basic Information</a>
+            <a href="#bioData">Bio Data</a>
+            <a href="#education">Education</a>
+            <a href="#documents">Documents</a>
+          </div>
         </div>
         <form action="" className="apply-form" onSubmit={handleSubmit}>
-          <UpLoadPhoto />
+          <div id="uploadPhoto">
+            <UpLoadPhoto />
+          </div>
           <p className="required">
             All fields marked with an asterick(*) are required!
           </p>
           <div className="input-fields">
-            <h3 className="category-title">Basic Information</h3>
+            <h3 className="category-title" id="basicInformation">
+              Basic Information
+            </h3>
             <div>
               <div className="input-fields-con">
                 <label className="label">
@@ -172,7 +183,9 @@ const ApplyNow = () => {
             </div>
           </div>
           <div className="input-fields">
-            <h3 className="category-title">Bio Data</h3>
+            <h3 className="category-title" id="bioData">
+              Bio Data
+            </h3>
             <div>
               <div className="input-fields-con">
                 <label className="label">
@@ -307,7 +320,9 @@ const ApplyNow = () => {
             </div>
           </div>
           <div className="input-fields">
-            <h3 className="category-title">Education</h3>
+            <h3 className="category-title" id="education">
+              Education
+            </h3>
             <div>
               <div className="input-fields-con">
                 <label className="label">
@@ -342,7 +357,7 @@ const ApplyNow = () => {
                 </label>
 
                 <label className="label">
-                  A'level Year
+                  A'level Year*
                   <input
                     type="text"
                     name="alevelyear"
@@ -374,7 +389,9 @@ const ApplyNow = () => {
             </div>
           </div>
           <div className="documents">
-            <h3 className="category-title">Documents</h3>
+            <h3 className="category-title" id="documents">
+              Documents
+            </h3>
             <div className="documents-con">
               <div>
                 <p>Attach any required Documents such as Certificates etc</p>
