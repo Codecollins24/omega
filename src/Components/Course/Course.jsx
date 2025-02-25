@@ -16,7 +16,7 @@ const Course = () => {
       </div>
       <div className="home-card-group">
         <Card
-          imgSrc="/computerscience.png"
+          imgSrc="/computerscience1.jpg"
           title="Computer Science"
           price="$2000"
           text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam qui impedit animi temporibus mollitia esse error adipisci, distinctio accusantium"
