@@ -1,6 +1,6 @@
 # Colville University Website  
 
-Welcome to the Colville University Website repository! This project serves as the official web platform for Colville University, providing students, faculty, and visitors with essential information about the institution.  
+Welcome to the Colville University Website repository! This project serves as the official web platform for Colville University, providing students, faculty, lecturers and visitors with essential information about the institution.  
 
 ## 📌 Features  
 ✅ Home Page – Overview of the university, announcements, and latest news.  
