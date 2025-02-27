@@ -50,6 +50,9 @@
   --96px:6rem;
   --104px:6.5rem;
 }
+body {
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
   color: inherit;

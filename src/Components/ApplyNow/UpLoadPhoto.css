@@ -82,6 +82,7 @@
 .input-button:hover {
   background-color: #f00476;
 }
+
 @media screen and (max-width: 620px) {
   .input-button {
     padding: var(--8px) 1rem;

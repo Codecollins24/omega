@@ -24,7 +24,7 @@ const Course = () => {
           cardLink={handleApply}
         />
         <Card
-          imgSrc="/medicine.png"
+          imgSrc="/medicine-1.jpg"
           title="Medicine & Surgery"
           price="$3500"
           text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam qui impedit animi temporibus mollitia esse error adipisci, distinctio accusantium"
@@ -32,7 +32,7 @@ const Course = () => {
           cardLink={handleApply}
         />
         <Card
-          imgSrc="/ict.png"
+          imgSrc="/ict1.jpg"
           title="Information Technology"
           price="$900"
           text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam qui impedit animi temporibus mollitia esse error adipisci, distinctio accusantium"
