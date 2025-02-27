@@ -21,7 +21,7 @@ const Courses = () => {
             <h3 className="program">Undergraduate</h3>
             <div className="home-card-group">
               <Card
-                imgSrc="/computerscience.png"
+                imgSrc="/computerscience1.jpg"
                 title="Computer Science"
                 price="$2000"
                 text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam qui impedit animi temporibus mollitia esse error adipisci, distinctio accusantium"
@@ -29,7 +29,7 @@ const Courses = () => {
                 cardLink={handleApply}
               />
               <Card
-                imgSrc="/medicine.png"
+                imgSrc="/medicine-1.jpg"
                 title="Medicine & Surgery"
                 price="$3500"
                 text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam qui impedit animi temporibus mollitia esse error adipisci, distinctio accusantium"
@@ -37,7 +37,7 @@ const Courses = () => {
                 cardLink={handleApply}
               />
               <Card
-                imgSrc="/ict.png"
+                imgSrc="/ict1.jpg"
                 title="Infomation Technology"
                 price="$900"
                 text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam qui impedit animi temporibus mollitia esse error adipisci, distinctio accusantium"
