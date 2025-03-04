@@ -45,7 +45,7 @@ const Courses = () => {
                 cardLink={handleApply}
               />
               <Card
-                imgSrc="/computerscience.png"
+                imgSrc="/publichealth.jpg"
                 title="Public Health"
                 price="$2500"
                 text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam qui impedit animi temporibus mollitia esse error adipisci, distinctio accusantium"
@@ -53,7 +53,7 @@ const Courses = () => {
                 cardLink={handleApply}
               />
               <Card
-                imgSrc="/computerscience.png"
+                imgSrc="/computer-animation.jpg"
                 title="Computer Animation"
                 price="$1030"
                 text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam qui impedit animi temporibus mollitia esse error adipisci, distinctio accusantium"
@@ -61,7 +61,7 @@ const Courses = () => {
                 cardLink={handleApply}
               />
               <Card
-                imgSrc="/computerscience.png"
+                imgSrc="/business-administration.jpg"
                 title="Business Administration"
                 price="$800"
                 text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam qui impedit animi temporibus mollitia esse error adipisci, distinctio accusantium"
